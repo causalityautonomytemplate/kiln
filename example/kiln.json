@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "tasks": {
+    "clean": {
+      "command": "rm -rf dist"
+    },
+    "bundle": {
+      "command": "mkdir -p dist && cp src/index.js dist/bundle.js",
+      "inputs": ["src/index.js"],
+      "outputs": ["dist/bundle.js"]
+    },
+    "build": {
+      "command": "echo 'Build complete'",
+      "dependsOn": ["bundle"]
+    }
+  }
+}

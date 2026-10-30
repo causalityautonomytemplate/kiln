@@ -1,0 +1,15 @@
+{
+  "name": "kiln",
+  "version": "1.0.0",
+  "description": "Deterministic incremental task runner and build tool",
+  "type": "module",
+  "bin": {
+    "kiln": "./bin/kiln.js"
+  },
+  "scripts": {
+    "test": "node --test test/**/*.test.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
